@@ -54,7 +54,7 @@ lib/
 └── main.dart
 
 ## APK
-[Dummy AI Chat App.apk](build/app/outputs/flutter-apk/Dummy%20AI%20Chat%20App.apk)
+[Dummy AI Chat App.apk](Dummy%20AI%20Chat%20App.apk)
 
 ## Developer Details
  Engr. Hamid Raza
