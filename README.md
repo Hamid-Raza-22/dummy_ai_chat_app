@@ -55,3 +55,9 @@ lib/
 
 ## APK
 [Dummy AI Chat App.apk](build/app/outputs/flutter-apk/Dummy%20AI%20Chat%20App.apk)
+
+## Developer Details
+ Engr. Hamid Raza
+ Software Engineer
+ hamidraza.engr@gmail.com
+ +923131489445
