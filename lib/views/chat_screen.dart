@@ -14,25 +14,53 @@ class ChatScreen extends StatelessWidget {
     final scrollController = ScrollController();
 
     return Scaffold(
-      appBar: AppBar(title: Center(child: const Text('Dummy AI Chat App'))),
+      appBar: AppBar(
+        title: const Center(child: Text('Dummy AI Chat App')),
+      ),
       body: Column(
         children: [
           Expanded(
-            child: Obx(() => ListView.builder(
-              controller: scrollController,
-              itemCount: viewModel.messages.length,
-              itemBuilder: (ctx, index) {
-                final message = viewModel.messages[index];
-                return MessageBubble(
-                  text: message.text,
-                  isUser: message.isUser,
-                );
-              },
-            )),
+            child: Obx(() {
+              // Auto-scroll when new messages arrive or typing starts
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (scrollController.hasClients) {
+                  scrollController.animateTo(
+                    scrollController.position.maxScrollExtent,
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeOut,
+                  );
+                }
+              });
+
+              return ListView.builder(
+                controller: scrollController,
+                itemCount: viewModel.messages.length +
+                    (viewModel.isLoading.value ? 1 : 0),
+                itemBuilder: (ctx, index) {
+                  // Show typing indicator as the last item when loading
+                  if (viewModel.isLoading.value &&
+                      index == viewModel.messages.length) {
+                    return const Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 4,
+                          horizontal: 8,
+                        ),
+                        child: TypingIndicator(),
+                      ),
+                    );
+                  }
+
+                  final message = viewModel.messages[index];
+                  return MessageBubble(
+                    text: message.text,
+                    isUser: message.isUser,
+                  );
+                },
+              );
+            }),
           ),
-          Obx(() => viewModel.isLoading.value
-              ? const TypingIndicator()
-              : const SizedBox.shrink()),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -44,18 +72,12 @@ class ChatScreen extends StatelessWidget {
                       hintText: 'Type a message...',
                       border: OutlineInputBorder(),
                     ),
-                    onSubmitted: (_) {
-                      viewModel.sendMessage(textController.text);
-                      textController.clear();
-                    },
+                    onSubmitted: (_) => _sendMessage(viewModel, textController),
                   ),
                 ),
                 IconButton(
                   icon: const Icon(Icons.send),
-                  onPressed: () {
-                    viewModel.sendMessage(textController.text);
-                    textController.clear();
-                  },
+                  onPressed: () => _sendMessage(viewModel, textController),
                 ),
               ],
             ),
@@ -63,5 +85,13 @@ class ChatScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _sendMessage(ChatViewModel viewModel, TextEditingController controller) {
+    final text = controller.text.trim();
+    if (text.isNotEmpty) {
+      viewModel.sendMessage(text);
+      controller.clear();
+    }
   }
 }

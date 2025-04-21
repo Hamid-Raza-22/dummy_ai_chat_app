@@ -25,9 +25,10 @@ A Flutter mobile application that allows users to  Dummy chat with an AI, built 
 
 **Backend:**
 - Firebase # in Functions Directory
-- Node.js # in ai_chat_backend Directory
+- (Local) Node.js # in ai_chat_backend Directory
 
 ## Project Structure
+
 lib/
 ├── models/ # Data models
 ├── repositories/ # Data layer
@@ -36,6 +37,7 @@ lib/
 └── main.dart # App entry point
 
 ## Project Structure in Details
+
 lib/
 ├── models/
 │   ├── message.dart
@@ -50,3 +52,6 @@ lib/
 │       ├── message_bubble.dart
 │       └── typing_indicator.dart
 └── main.dart
+
+## APK
+[Dummy AI Chat App.apk](build/app/outputs/flutter-apk/Dummy%20AI%20Chat%20App.apk)
