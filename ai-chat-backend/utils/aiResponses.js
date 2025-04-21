@@ -6,6 +6,7 @@ const aiResponses = {
   creator: ["who made you", "creator", "developer"]
 };
 
+
 function getAIResponse(message) {
   const lowerMsg = message.toLowerCase().trim();
   
