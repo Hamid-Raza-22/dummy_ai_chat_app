@@ -32,7 +32,7 @@ function getAIResponse(message: string): string {
     return "You're welcome! Is there anything else I can help with?";
   }
   if (aiResponses.feelings.some((phrase) => lowerMsg.includes(phrase))) {
-    return "I'm a Firebase Function, always ready to help!";
+        return "I'm a Dummy AI Assistant developed by Hamid Raza, always ready to help!";
   }
   if (lowerMsg.includes("your name")) {
     return "I'm your Firebase AI assistant!";
