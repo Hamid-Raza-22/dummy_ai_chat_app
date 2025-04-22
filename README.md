@@ -29,6 +29,7 @@ A Flutter mobile application that allows users to  Dummy chat with an AI, built 
 
 ## Project Structure
 
+```
 lib/
 ├── models/               # Data models and entities
 │   ├── message.dart      # Message data structure
@@ -47,9 +48,9 @@ lib/
 │       └── typing_indicator.dart # Animated typing indicator
 │
 └── main.dart            # Application entry point
-
+```
 ## APK 
-[⬇️ Download APK](Dummy%20AI%20Chat%20App.apk){:download="Dummy_AI_Chat_App.apk"}
+[⬇️ Download APK (25MB)](Dummy%20AI%hat%20App.apk)
 
 
 ## Developer Details
