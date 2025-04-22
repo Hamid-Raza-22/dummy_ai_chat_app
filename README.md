@@ -30,31 +30,27 @@ A Flutter mobile application that allows users to  Dummy chat with an AI, built 
 ## Project Structure
 
 lib/
-├── models/ # Data models
-├── repositories/ # Data layer
-├── viewmodels/ # Business logic
-├── views/ # UI components
-└── main.dart # App entry point
+├── models/               # Data models and entities
+│   ├── message.dart      # Message data structure
+│   └── api_response.dart # Standard API response format
+│
+├── repositories/         # Data access layer
+│   └── chat_repository.dart # Handles all API communications
+│
+├── viewmodels/           # Business logic layer
+│   └── chat_viewmodel.dart # Manages application state
+│
+├── views/                # Presentation layer
+│   ├── chat_screen.dart  # Main chat interface
+│   └── widgets/          # Reusable UI components
+│       ├── message_bubble.dart # Custom chat bubbles
+│       └── typing_indicator.dart # Animated typing indicator
+│
+└── main.dart            # Application entry point
 
-## Project Structure in Details
+## APK 
+[⬇️ Download APK](Dummy%20AI%20Chat%20App.apk){:download="Dummy_AI_Chat_App.apk"}
 
-lib/
-├── models/
-│   ├── message.dart
-│   └── api_response.dart
-├── repositories/
-│   └── chat_repository.dart
-├── viewmodels/
-│   └── chat_viewmodel.dart
-├── views/
-│   ├── chat_screen.dart
-│   └── widgets/
-│       ├── message_bubble.dart
-│       └── typing_indicator.dart
-└── main.dart
-
-## APK
-[Dummy AI Chat App.apk](Dummy%20AI%20Chat%20App.apk)
 
 ## Developer Details
  Engr. Hamid Raza
