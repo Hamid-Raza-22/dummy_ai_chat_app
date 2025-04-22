@@ -55,7 +55,7 @@ lib/
 ```
 
 ## Loom Video
-[Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
+[Live Demo Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
 
 ## APK 
 [⬇️ Download APK (20MB)](Dummy%20AI%hat%20App.apk)
