@@ -1,8 +1,4 @@
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
 # Dummy AI Chat App (MVVM Architecture)
 
 A Flutter mobile application that allows users to  Dummy chat with an AI, built with MVVM architecture and a Node.js & Firebase backend.
@@ -57,8 +53,11 @@ lib/
 ## Loom Video
 [Live Demo Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
 
-## APK 
+## Download APK From Repository 
 [⬇️ Download APK (20MB)](Dummy%20AI%hat%20App.apk)
+
+## Direct Download APK
+[⬇️ Download APK (20MB)](https://github.com/Hamid-Raza-22/dummy_ai_chat_app/blob/master/Dummy%20AI%20Chat%20App.apk)
 
 ## Contact
 **Hamid Raza**  
@@ -66,6 +65,6 @@ lib/
 
 📧 **Email**: [hamidraza.engr@gmail.com](mailto:hamidraza.engr@gmail.com)  
 📞 **Phone**: [+92 313 1489445](tel:+923131489445)  
-🔗 **LinkedIn**: [Hamid Raza](https://www.linkedin.com/in/hamid-raza-a01780199) 
-💻 **GitHub**: [@hamidraza-dev](https://github.com/Hamid-Raza-22)
+🔗 **LinkedIn**: [Hamid Raza](https://www.linkedin.com/in/hamid-raza-a01780199)  
+💻 **GitHub**: [@hamidraza-dev](https://github.com/Hamid-Raza-22) 
 
