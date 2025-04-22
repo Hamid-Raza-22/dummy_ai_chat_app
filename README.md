@@ -57,12 +57,12 @@ lib/
 [Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
 
 ## APK 
-[⬇️ Download APK (25MB)](Dummy%20AI%hat%20App.apk)
+[⬇️ Download APK (20MB)](Dummy%20AI%hat%20App.apk)
 
 
 ## Contact
 **Hamid Raza**  
-📍 Senior Software Engineer (Flutter Specialist)
+📍 Senior Software Engineer (Flutter Specialist) (Tech Lead)
 
 📧 **Email**: [hamidraza.engr@gmail.com](mailto:hamidraza.engr@gmail.com)  
 📞 **Phone**: [+92 313 1489445](tel:+923131489445)  
