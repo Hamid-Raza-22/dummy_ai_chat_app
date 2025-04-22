@@ -53,12 +53,12 @@ lib/
 │
 └── main.dart            # Application entry point
 ```
+
 ## Loom Video
 [Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
 
 ## APK 
 [⬇️ Download APK (20MB)](Dummy%20AI%hat%20App.apk)
-
 
 ## Contact
 **Hamid Raza**  
@@ -66,7 +66,6 @@ lib/
 
 📧 **Email**: [hamidraza.engr@gmail.com](mailto:hamidraza.engr@gmail.com)  
 📞 **Phone**: [+92 313 1489445](tel:+923131489445)  
-🔗 **LinkedIn**: [Hamid Raza](https://www.linkedin.com/in/hamid-raza-a01780199) *(optional link)*  
-💻 **GitHub**: [@hamidraza-dev](https://github.com/Hamid-Raza-22) *(optional link)*
+🔗 **LinkedIn**: [Hamid Raza](https://www.linkedin.com/in/hamid-raza-a01780199) 
+💻 **GitHub**: [@hamidraza-dev](https://github.com/Hamid-Raza-22)
 
-*Available for freelance projects and technical consultations*
