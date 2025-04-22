@@ -16,12 +16,16 @@ A Flutter mobile application that allows users to  Dummy chat with an AI, built 
 - Error handling for API calls
 - Local backend server integration
 
-## Tech Stack
+## Technical Specifications
 
-**Frontend:**
-- Flutter (Dart)
-- GetX (State Management)
-- HTTP (API calls)
+| Component          | Technology Used         |
+|--------------------|-------------------------|
+| **Framework**      | Flutter 3.0+            |
+| **State Management** | GetX 4.6+             |
+| **Networking**     | HTTP Package  |
+| **Local Backend**  | Node.js 18+  |
+| **Cloud Backend**  | Firebase Functions      |
+
 
 **Backend:**
 - Firebase # in Functions Directory
@@ -49,12 +53,20 @@ lib/
 │
 └── main.dart            # Application entry point
 ```
+## Loom Video
+[Link](https://www.loom.com/share/76bb546443084e0dacf9d3f98b34ef48)
+
 ## APK 
 [⬇️ Download APK (25MB)](Dummy%20AI%hat%20App.apk)
 
 
-## Developer Details
- Engr. Hamid Raza
- Software Engineer
- hamidraza.engr@gmail.com
- +923131489445
+## Contact
+**Hamid Raza**  
+📍 Senior Software Engineer (Flutter Specialist)
+
+📧 **Email**: [hamidraza.engr@gmail.com](mailto:hamidraza.engr@gmail.com)  
+📞 **Phone**: [+92 313 1489445](tel:+923131489445)  
+🔗 **LinkedIn**: [Hamid Raza](https://www.linkedin.com/in/hamid-raza-a01780199) *(optional link)*  
+💻 **GitHub**: [@hamidraza-dev](https://github.com/Hamid-Raza-22) *(optional link)*
+
+*Available for freelance projects and technical consultations*
